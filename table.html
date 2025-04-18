@@ -1,75 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>ITD</title>
+<title>TABLE</title>
+<link rel="stylesheet" href="table.css">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,150;1,150&display=swap" rel="stylesheet">
-<style>
-  html, body {
-    height: 100%;
-    background-color: #cae4ce;
-    margin: 0;
-    padding: 0;
-  }
-
-  body {
-    display: flex;
-    font-family: "Roboto", sans-serif;
-    background-color: white;
-    align-items: center;
-    justify-content: center;
-  }
-
-  th, td {
-    padding: 8px;
-    text-align: left;
-    border: 1px solid white;
-  }
-
-  th {
-    background-color: #276967;
-    color: white;
-  }
-
-  .row-item1, .row-item2, .row-item3 {
-    background-color:  #c8d5b9;
-  }
-
-  .invoice-header {
-    background-color:  #cae4ce;
-    border-bottom: 1px solid #276967;
-    padding: 20px 0;
-    color: black;
-    text-align: center;
-  }
-
-  .bill-to {
-    background-color:  #cae4ce;
-  }
-
-  .client-info {
-    background-color:  #cae4ce;
-  }
-
-
-  table {
-    border-collapse: collapse;
-    width: 90%;
-    border: 5px solid #8fc0a9;
-    background-color: #f3f4e7;
-    max-width: 1000px;
-    font-weight: bold;
-  }
-
-  .row-subtotal, .row-grandtotal, .row-tax {
-    font-weight: bold;
-    text-align: right;
-  }
-
-
-</style>
 </head>
-<body>
 
+<body>
 <table>
   <tr>
     <th colspan="4" class="invoice-header">Invoice Tabular Data</th>
@@ -79,13 +16,13 @@
     <th style="text-align: right;">14 January 2025</th>
   </tr>
   <tr>
-    <td class="bill-to" colspan="2">
+    <td class="billing" colspan="2">
       <strong>Pay to:</strong><br>
       Acme Billing Co.<br>
       123 Main St.<br>
       Cityville, NA 12345
     </td>
-    <td class="client-info" colspan="2">
+    <td class="customer-info" colspan="2">
       <strong>Customer:</strong><br>
       John Smith<br>
       321 Willow Way<br>

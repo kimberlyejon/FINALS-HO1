@@ -3,91 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <title>Form</title>
+  <link rel="stylesheet" href="form.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,150;1,150&display=swap" rel="stylesheet">
-  <style>
-    html, body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-    display: flex;
-    font-family: "Roboto", sans-serif;
-    background-color: white;
-    align-items: center;
-    justify-content: center;
-    }
-
-    .form-container {
-      width: 100%;
-      max-width: 900px;
-      padding: 20px;
-      box-sizing: border-box;
-    }
-
-    .data-table {
-      width: 100%;
-      border: 5px solid  #8fc0a9;
-      background-color: #f3f4e7;
-      border-collapse: collapse;
-    }
-
-    .header-row {
-      background-color: #8fc0a9;
-    }
-
-
-    .cell, .header-cell {
-      border-bottom: 1px solid  #8fc0a9;
-      font-weight: bold;
-      vertical-align: top;
-      padding: 15px;
-    }
-
-    .text-input,
-    .dropdown,
-    .textarea {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-    }
-
-    .textarea {
-      resize: none;
-    }
-
-    .submit-button {
-      width: 50%;
-      background-color:  #8fc0a9;
-      color: black;
-      padding: 15px 20px;
-      margin: 8px 0;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 1.125em;
-    }
-    
-  </style>
 </head>
-<body>
 
-<form method="post" class="form-container">
-  <table class="data-table">
+<body>
+<form method="post" class="form_container">
+  <table class="table_data">
     <thead>
-      <tr class="header-row">
-        <th class="header-cell">Name</th>
-        <th class="header-cell">Value</th>
+      <tr class="header_row">
+        <th class="header_cell">Name</th>
+        <th class="header_cell">Value</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td class="cell"><label for="name">Name:</label></td>
-        <td class="cell"><input type="text" name="name" id="name" class="text-input" placeholder="Type your name here" maxlength="50"></td>
+        <td class="cell"><input type="text" name="name" id="name" class="text_input" placeholder="Type your name here" maxlength="50"></td>
       </tr>
       <tr>
         <td class="cell"><label for="sex">Sex:</label></td>
@@ -98,9 +30,9 @@
         </td>
       </tr>
       <tr>
-        <td class="cell"><label for="eyeColor">Eye Color:</label></td>
+        <td class="cell"><label for="eye_color">Eye Color:</label></td>
         <td class="cell">
-          <select name="eyeColor" id="eyeColor" class="dropdown">
+          <select name="eye_color" id="eye_color" class="dropdown">
             <option value="brown">Brown</option>
             <option value="blue">Blue</option>
             <option value="black">Black</option>
@@ -111,9 +43,9 @@
       <tr>
         <td class="cell"><label>Check all that applies:</label></td>
         <td class="cell">
-          <input type="checkbox" id="feature1" name="feature1" value="6ft"><label for="feature1"> Over 6ft. Tall</label><br>
-          <input type="checkbox" id="feature2" name="feature2" value="200lbs"><label for="feature2"> Over 200 pounds</label><br>
-          <input type="checkbox" id="feature3" name="feature3" value="less than 200 lbs"><label for="feature3"> Less than 200 pounds</label>
+          <input type="checkbox" id="BMI1" name="BMI1" value="6ft"><label for="BMI1"> Over 6ft. Tall</label><br>
+          <input type="checkbox" id="BMI2" name="BMI2" value="200lbs"><label for="BMI2"> Over 200 pounds</label><br>
+          <input type="checkbox" id="BMI3" name="BMI3" value="less than 200 lbs"><label for="BMI3"> Less than 200 pounds</label>
         </td>
       </tr>
       <tr>
@@ -128,6 +60,5 @@
     </tfoot>
   </table>
 </form>
-
 </body>
 </html>

@@ -1,0 +1,59 @@
+html, body {
+    height: 100%;
+    background-color: #F6B0BB;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+  }
+
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #083d3b;
+  }
+
+  th {
+    background-color: #F6B0BB;
+    color: #083d3b;
+  }
+
+  .row-item1, .row-item2, .row-item3 {
+    background-color:  #f2ffeb;
+  }
+
+  .invoice-header {
+    background-color:  #94d69f;
+    border-bottom: 1px solid #083d3b;
+    padding: 20px 0;
+    color: black;
+    text-align: center;
+  }
+
+  .billing {
+    background-color:  #f2ffeb;
+  }
+
+  .customer-info {
+    background-color:  #f2ffeb;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 90%;
+    border: 5px solid #569175;
+    background-color: #ffdbe2;
+    max-width: 1000px;
+    font-weight: bold;
+  }
+
+  .row-subtotal, .row-grandtotal, .row-tax {
+    font-weight: bold;
+    text-align: right;
+  }
